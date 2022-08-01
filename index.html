@@ -11,19 +11,24 @@
 <link href="asset/css/font-awesome/css/font-awesome.css" rel="stylesheet" />
 <link href="asset/css/social-buttons.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.css">
-<?php //include 'navbar.php'; ?>
 <style type="text/css">
   .img{
     background-color: black;
     border-radius: 28px;
   }
 </style>
+<script>
+function refreshPage(){
+    window.location.reload();
+} 
+</script>
 <body style="background-image: url('./asset/img/bg0.jpg'); background-repeat:no-repeat; background-size: cover; ">
 
 <div class="container" align="center">
 <h1 style="color:#1b30a4;">Authentication with Face Recognition</h1>
-<button type="submit" class="btn btn-md btn-primary" id="enroll"><i class="fa fa-camera"></i> Enroll New User</button> &nbsp;
-<button type="submit" class="btn btn-md btn-success" id="authenticate"><i class="fa fa-user"></i> Authenticate User</button>
+<button type="submit" class="btn btn-lg btn-dark" id="enroll"><i class="fa fa-camera"></i> Enroll New User</button> <br/><br/>&nbsp;
+<button type="submit" class="btn btn-lg btn-dark" id="authenticate"><i class="fa fa-user"></i> Authenticate User</button><br/><br/>&nbsp;&nbsp;
+<button type="submit" onClick="refreshPage()" class="btn btn-lg btn-outline-dark"><i class="fa fa-refresh"></i> Refresh</button>
 </div>
 <div id="faceio-modal"></div>
 <script src="https://cdn.faceio.net/fio.js"></script>
